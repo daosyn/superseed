@@ -2,4 +2,42 @@
 
 [node name="game" type="Node2D" index="0"]
 
+visible = false
+
+[node name="grid" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = null
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray(  )
+_sections_unfolded = [ "Cell" ]
+
+[node name="player" type="Node2D" parent="grid" index="0"]
+
+[node name="pivot" type="Position2D" parent="grid/player" index="0"]
+
+[node name="sprite" type="Sprite" parent="grid/player/pivot" index="0"]
+
+[node name="tween" type="Tween" parent="grid/player" index="1"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
 
