@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var input_states = preload("res://scripts/input_states.gd")
 
-export var player_speed = 32
+var player_speed = 32
 
 var speed = Vector2(0, 0)
 var curr_pos = Vector2(0, 0)

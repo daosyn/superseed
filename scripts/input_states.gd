@@ -26,3 +26,4 @@ func check():
 		output_state = 3 #just released
 	
 	return output_state
+	
